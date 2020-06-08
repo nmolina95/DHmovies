@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title><%=moviePK.title%></title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.5.3/dist/js/uikit-icons.min.js"></script>
+    <!-- My Own Stylesheet -->
+    <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+    <div class="uk-placeholder">
+        <div class="uk-width-1-2@s uk-width-2-5@m">
+            <h1 class="uk-heading-line uk-text-center"><span><%=moviePK.title%></span></h1>
+            <p class="uk-heading-line uk-text-center"><span>Details</span></p>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Rating:</dt>
+                <dd><%= moviePK.rating%></dd>
+            </dl>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Awards:</dt>
+                <dd><%= moviePK.awards%></dd>
+            </dl>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Length:</dt>
+                <dd> <%= moviePK.length%> </dd>
+            </dl>
+            <dl class="uk-description-list uk-description-list-divider">
+                <dt>Release Date:</dt>
+                <dd><%= moviePK.release_date%></dd>
+            </dl>
+        </div>
+
+        <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Delete</button>
+        <button type="submit" class="uk-button uk-button-primary uk-width-1-1 uk-margin-small-bottom">Edit</button> <br>
+        <br>
+        <a class="uk-button uk-button-default" href="/movies">Back</a>
+
+
+    </div>
+
+</body>
+
+</html>

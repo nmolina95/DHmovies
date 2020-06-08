@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Movies</title>
+</head>
+<body>
+    <h1>Encontra Peliculas</h1>
+    <form action="/movies/search" method="POST">
+        <input type="text" name="search" placeholder="search">
+        <select name="order">
+            <option value="rating">Rating</option>
+            <option value="length">Duración</option>
+            <option value="awards">Premio</option>
+        </select>
+    </form>
+</body>
+</html>
